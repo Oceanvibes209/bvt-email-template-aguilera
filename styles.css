@@ -10,6 +10,10 @@ nav{
     width: 100vw;
 }
 
+.dropdown-menu{
+    width: 400px;
+}
+
 .row{
     display: flex;
     justify-content: center;
@@ -25,25 +29,78 @@ nav{
 }
 
 .email-mobile{
-    background-color: aqua;
+    background-color:#00b4d8;
      justify-content: flex-start;
 }
 
 .email-tablet{
-    background-color: #a9a9a9;
+    background-color: #f0ead2;
     justify-content:space-evenly;
     flex-direction: column;
 
 }
 
 .uremail{
-    background-color: #E9EDC9;
-    width: 100%;
+    background-color: #0077b6;
+    text-align: left;
+    width: 90%;
     height: 15vh;
+    overflow: hidden;
+}
+.uremail:hover{
+    cursor: pointer;
+    background-color: #90e0ef;
+    transition: 1s;
 }
 
 .email-desktop{
-    background-color:green ;
+    border: 4px blueviolet solid;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: column;
+    background-color:#F3F3F3;
+}
+.to-from{
+    width:100%;
+    border: 4px red solid;
+    align-self: flex-start;
+    text-align: left;
+    flex-direction: column;
+    text-decoration: underline;
+}
+.opn-email{
+    box-shadow: 6px 4px 4px black;
+}
+.opn-email-body{
+    width:100%;
+    border: 4px green solid;
+    text-align: left;
+    align-self: flex-start;
+    font-size: 25px;
+
+}
+.email-reply{
+    border:4px aquamarine solid;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.reply-body{
+    width:100%;
+    height:200px;
+    text-align:start;
+    background-color: #D9D9D9;
+}
+.reply-btn{
+    width: 55px;
+    align-self: flex-end;
+}
+.reply-btn:hover{
+    background-color: rgb(0, 170, 255);
+    transition: 1s;
+    box-shadow:6px 3px 3px black ;
 }
 ul{
     text-align: left;
