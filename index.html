@@ -1,97 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Template</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Template</title>
 </head>
+
 <body>
 
-    <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Jet Mail</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Jet Mail</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+        aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Settings
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Account Settings</a></li>
+              <li><a class="dropdown-item" href="#">Notification Settings</a></li>
+              <li>
+                <hr class="dropdown-divider">
               </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Settings
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Account Settings</a></li>
-                  <li><a class="dropdown-item" href="#">Notification Settings</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Themes</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Log Out</a>
-              </li>
+              <li><a class="dropdown-item" href="#">Themes</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search Mail" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-
-    <div class="container-fluid text-center">
-        <div class="row">
-          <div class="col d-none d-md-flex col-md-4 col-xl-2 email-mobile card-style">
-             <P>
-                <ul>
-                    <li>Inbox</li>
-                    <li>Important</li>
-                    <li>Sent</li>
-                    <li>Draft</li>
-                    <li>Trash</li>
-                </ul>
-             </P>
-          </div>
-          <div class="col col-md-8 col-xl-4 email-tablet card-style">
-            <div class="uremail"></div>
-            <div class="uremail"></div>
-            <div class="uremail opn-email">
-              <h1>Amazon</h1>
-              <h4>You forgot something in your cart!</h4>
-              <h6>Its in your cart</h6>
-            </div>
-            <div class="uremail"></div>
-            <div class="uremail"></div>
-          </div>
-          <div class=" col d-none d-xl-flex col-xl-6 email-desktop card-style">
-            <div class="to-from">
-              <h6>To: kachow@turbo.mail</h6>
-              <h6>From: Amazon@turbo.mail</h6>
-              <br>
-            </div>
-            <div class="opn-email-body">
-              <p>You forgot an item!</p>
-              
-              <p>We noticed you left an item in your cart!</p>
-              <p>You should buy it</p>
-              <p>Go into debt!</p>
-              <p>With the all new Amazonian Credit Card!</p>
-              <p>55% interest rate</p>
-              <p>WHAT A BARGAIN!</p>
-            </div>
-            <div class="email-reply">
-              <form>
-                <textarea class="reply-body" type="text" placeholder="Reply" required></textarea>
-              </form>
-              <button class="reply-btn" target="_blank">SEND</button>
-            </div>
-          </div>
-        </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Log Out</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Mail" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  </nav>
+
+  <div class="container-fluid text-center">
+    <div class="row">
+      <div class="col d-none d-md-flex col-md-4 col-xl-2 email-mobile card-style">
+        <button class="btn btn-lg btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+          aria-controls="offcanvasRight">Compose</button>
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Compose your Email</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="to-side-compose">
+              <input class="compose-email" type="email" placeholder="To:" required></input>
+              <input class="compose-email" type="email" placeholder="From:" required></input>
+            </div>
+            <textarea class="compose-side-bar" type="text" placeholder="Compose"></textarea>
+            <button type="button" class="btn btn-sm btn-primary">Send</button>
+          </div>
+        </div>
+        <P>
+          <ul>
+            <li>Inbox</li>
+            <li>Important</li>
+            <li>Sent</li>
+            <li>Draft</li>
+            <li>Trash</li>
+          </ul>
+          </P>
+      </div>
+      <div class="col col-md-8 col-xl-4 email-tablet card-style">
+        <div class="uremail">
+          <h1>Netflix</h1>
+          <h4>We heard you're bored!</h4>
+          <h6>Here is a movie for you!</h6>
+        </div>
+        <div class="uremail">
+          <h1>Instagram</h1>
+          <h4>1 new notification!</h4>
+          <h6>Someone liked your picture!</h6>
+        </div>
+        <div class="uremail opn-email">
+          <h1>Amazon</h1>
+          <h4>You forgot something in your cart!</h4>
+          <h6>Its in your cart</h6>
+        </div>
+        <div class="uremail">
+          <h1>Linkedin</h1>
+          <h4>New job posting!</h4>
+          <h6>Someone viewed your profile</h6>
+        </div>
+        <div class="uremail">
+          <h1>BVT</h1>
+          <h4>Assignment graded</h4>
+          <h6>You need more practice!</h6>
+        </div>
+      </div>
+      <div class=" col d-none d-xl-flex col-xl-6 email-desktop card-style">
+        <div class="to-from">
+          <h6>To: kachow@turbo.mail</h6>
+          <h6>From: Amazon@turbo.mail</h6>
+          <br>
+        </div>
+        <div class="opn-email-body">
+          <p>You forgot an item!</p>
+
+          <p>We noticed you left an item in your cart!</p>
+          <p>You should buy it</p>
+          <p>Go into debt!</p>
+          <p>With the all new Amazonian Credit Card!</p>
+          <p>55% interest rate</p>
+          <p>WHAT A BARGAIN!</p>
+        </div>
+        <div class="email-reply">
+          <form>
+            <textarea class="reply-body" type="text" placeholder="Compose" required></textarea>
+          </form>
+          <button class="reply-btn" target="_blank">Reply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
