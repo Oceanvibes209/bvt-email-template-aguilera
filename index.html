@@ -11,7 +11,7 @@
 </head>
 
 <body>
-
+  <!-- Nav bar header menu-->
   <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Jet Mail</a>
@@ -52,10 +52,16 @@
   <div class="container-fluid text-center">
     <div class="row">
       <div class="col d-none d-md-flex col-md-4 col-xl-2 email-mobile card-style">
+        <!--Left side menu with user icon, side menu options that are "clickable" and have a hover effect.-->
+        <div class="user-icon"><img
+            src="https://th.bing.com/th/id/R.8e2c571ff125b3531705198a15d3103c?rik=gzhbzBpXBa%2bxMA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-big-image-png-2240.png&ehk=VeWsrun%2fvDy5QDv2Z6Xm8XnIMXyeaz2fhR3AgxlvxAc%3d&risl=&pid=ImgRaw&r=0"
+            class="img-fluid"></div>
+        <!--Compose button that opens a right side offcanvas menu to compose a email during desktop view-->
         <button class="btn btn-lg btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
           aria-controls="offcanvasRight">Compose</button>
-
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <!--Adding w-50 (width= 50%) to the offcanvas-end expanded the width of the menu to 50%-->
+        <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel">
           <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="offcanvasRightLabel">Compose your Email</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -69,17 +75,38 @@
             <button type="button" class="btn btn-sm btn-primary">Send</button>
           </div>
         </div>
-        <P>
-          <ul>
-            <li>Inbox</li>
-            <li>Important</li>
-            <li>Sent</li>
-            <li>Draft</li>
-            <li>Trash</li>
-          </ul>
-          </P>
+        <div class="side-bar-content">
+          <p>Inbox</p>
+          <p>Draft</p>
+          <p>Important</p>
+          <p>Spam</p>
+          <p>Trash</p>
+        </div>
       </div>
+      <!-- Compose button for the mobile view so It can compose a new email, it will only appear at a certain px width.-->
       <div class="col col-md-8 col-xl-4 email-tablet card-style">
+        <button class="btn-lg btn-light mobile-compose-btn" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Compose</button>
+        <!--Adding  h-75 (height 75%) to the offcanvas-bottom expanded the offcanvas menu to 75% of the viewport height. Now it will be easier to compose an email -->
+        <div class="offcanvas offcanvas-bottom h-75" tabindex="-1" id="offcanvasBottom"
+          aria-labelledby="offcanvasBottomLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Compose your email</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="mobile-compose">
+            <div class="offcanvas-body small to-from-mobile">
+              <input type="email" placeholder="To:" required>
+              <input type="email" placeholder="From:" required>
+            </div>
+            <div>
+              <textarea class="mobile-text-body" placeholder="Compose"></textarea>
+            </div>
+            <button type="button" class="btn btn-sm btn-primary mobile-compose-send-btn" >Send</button>
+          </div>
+
+        </div>
+        <!--Unread emails, named one opn-email to select as my opened email for my desktop view, added a box shadow to it to show its clicked.-->
         <div class="uremail">
           <h1>Netflix</h1>
           <h4>We heard you're bored!</h4>
@@ -112,6 +139,7 @@
           <h6>From: Amazon@turbo.mail</h6>
           <br>
         </div>
+        <!--Opened email for desktop view-->
         <div class="opn-email-body">
           <p>You forgot an item!</p>
 
