@@ -86,13 +86,25 @@ nav{
     display: none;
     width:75%;
 }
+
+/*one of the emails from the list has a box shadow to represent its clicked open, this must be before the @ media query otherwise it will not work. It was previously under the @ media query and would not remove the box shadow when the screen shrank to table and mobile view.*/
+.opn-email{
+    box-shadow: 6px 4px 4px black;
+}
 /*Displays the compose button once the pixel width of the display is less than or equal to 768px*/
 @media screen and (max-width:768px) {
     .mobile-compose-btn{
         display: block;
     }
 }
+/*Removes the box shadow when the screen is equal to or less than 1200px*/
+@media screen and (max-width:1200px) {
+    .opn-email{
+        box-shadow: none;
 
+    }
+    
+}
 /*Unread email list, in mobile view its the main display*/
 .uremail{
     background-color: #0077b6;
@@ -123,10 +135,7 @@ nav{
     flex-direction: column;
     text-decoration: underline;
 }
-/*one of the emails from the list has a box shadow to represent its clicked open*/
-.opn-email{
-    box-shadow: 6px 4px 4px black;
-}
+
 /*The text inside the opened email*/
 .opn-email-body{
     width:100%;
