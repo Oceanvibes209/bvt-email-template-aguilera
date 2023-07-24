@@ -5,7 +5,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-
+/*Hides the scrollbar, makes it look cleaner*/
 body::-webkit-scrollbar {
     display: none;
 }
@@ -22,7 +22,7 @@ nav{
     justify-content: center;
     align-items: center;
 }
-
+/*Column styling*/
 .card-style{
     height: 100vh;
     width: 100vw;
@@ -30,79 +30,92 @@ nav{
     align-items: center;
 }
 /*Left side menu only viewable in tablet and desktop view*/
-.email-mobile{
-    justify-content: space-around;
+.email-tablet{
+    justify-content: space-evenly;
     border-right:4px solid black;
     background-color:#00b4d8;
     flex-direction: column;
 }
-.user-icon{
-    
+/*Blue jet icon representing user*/
+.user-icon{   
     background-color: white;
     border-radius: 50%;
     height: 100px;
     width: 100px;
 }
 .user-icon:hover{
-    background-color: #a9a9a9;
-    border-radius: 50%;
     cursor: pointer;
 }
+/*User email displaying underneath user icon*/
+.user-email{
+    display: flex;
+    justify-content: center;
+}
+.user-email:hover{
+    cursor: pointer;
+    text-decoration:underline;
+}
+/*Left side menu*/
 .side-bar-content{
     font-size: 35px;
 }
+/*Makes the text look like links*/
 .side-bar-content p:hover{
     text-decoration: underline;
     cursor: pointer;
 }
-.email-tablet{
-    background-color: #f0ead2;
+/*Center column, transforms into tablet view with left side menu, and is the main display in mobile*/
+.email-mobile{
+    background-color: #b9b6ab;
     justify-content:space-evenly;
     flex-direction: column;
 }
+/*Offcanvas menu when user clicks compose button in mobile view the offcanvas menu slides from the bottom and user can type an email*/
 .mobile-compose{
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
+/*Mobile offcanvas menu textarea, made it tall and wide for easier usability*/
 .mobile-text-body{
     width: 95%;
     height: 300px;
 }
-
+/*Button on top of the unread emails only visible in mobile view*/
 .mobile-compose-btn{
     display: none;
     width:75%;
 }
+/*Displays the compose button once the pixel width of the display is less than or equal to 768px*/
 @media screen and (max-width:768px) {
     .mobile-compose-btn{
         display: block;
     }
-    .opn-email{
-        box-shadow:none;
-    }
-    
 }
+
+/*Unread email list, in mobile view its the main display*/
 .uremail{
     background-color: #0077b6;
     text-align: left;
     width: 90%;
     height: auto;
     overflow: hidden;
+    border-radius: 5px;
+    padding-left: 5px;
 }
 .uremail:hover{
     cursor: pointer;
     background-color: #90e0ef;
     transition: 1s;
 }
-
+/*Opened email on right side only visible in desktop view*/
 .email-desktop{
     display: flex;
     justify-content:space-around;
     flex-direction: column;
     background-color:#F3F3F3;
 }
-/*Opened email example only visible during desktop view*/
+/*Opened email to-from section displaying fake email accounts*/
 .to-from{
     width:100%;
     align-self: flex-start;
@@ -122,6 +135,7 @@ nav{
     font-size: 25px;
 
 }
+/*Opened email alignment*/
 .email-reply{
     width:100%;
     display: flex;
@@ -129,6 +143,7 @@ nav{
     flex-direction: column;
 
 }
+/*Compose section of the opened email only visible in desktop view*/
 .reply-body{
     width:100%;
     height:200px;

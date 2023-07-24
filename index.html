@@ -51,11 +51,12 @@
 
   <div class="container-fluid text-center">
     <div class="row">
-      <div class="col d-none d-md-flex col-md-4 col-xl-2 email-mobile card-style">
+      <div class="col d-none d-md-flex col-md-4 col-xl-2 email-tablet card-style">
         <!--Left side menu with user icon, side menu options that are "clickable" and have a hover effect.-->
-        <div class="user-icon"><img
-            src="https://th.bing.com/th/id/R.8e2c571ff125b3531705198a15d3103c?rik=gzhbzBpXBa%2bxMA&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fuser-png-icon-big-image-png-2240.png&ehk=VeWsrun%2fvDy5QDv2Z6Xm8XnIMXyeaz2fhR3AgxlvxAc%3d&risl=&pid=ImgRaw&r=0"
-            class="img-fluid"></div>
+        <div><img
+            src="https://static.vecteezy.com/system/resources/previews/000/355/159/original/jet-vector-icon.jpg" alt="blue jet icon" class="img-fluid user-icon">
+          <p class="user-email">aguilera236@jetmail.com</p>
+        </div>
         <!--Compose button that opens a right side offcanvas menu to compose a email during desktop view-->
         <button class="btn btn-lg btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
           aria-controls="offcanvasRight">Compose</button>
@@ -75,6 +76,7 @@
             <button type="button" class="btn btn-sm btn-primary">Send</button>
           </div>
         </div>
+        <!--Left side menu "Links"-->
         <div class="side-bar-content">
           <p>Inbox</p>
           <p>Draft</p>
@@ -84,7 +86,7 @@
         </div>
       </div>
       <!-- Compose button for the mobile view so It can compose a new email, it will only appear at a certain px width.-->
-      <div class="col col-md-8 col-xl-4 email-tablet card-style">
+      <div class="col col-md-8 col-xl-4 email-mobile card-style">
         <button class="btn-lg btn-light mobile-compose-btn" type="button" data-bs-toggle="offcanvas"
           data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Compose</button>
         <!--Adding  h-75 (height 75%) to the offcanvas-bottom expanded the offcanvas menu to 75% of the viewport height. Now it will be easier to compose an email -->
@@ -102,9 +104,8 @@
             <div>
               <textarea class="mobile-text-body" placeholder="Compose"></textarea>
             </div>
-            <button type="button" class="btn btn-sm btn-primary mobile-compose-send-btn" >Send</button>
+            <button type="button" class="btn btn-sm btn-primary mobile-compose-send-btn">Send</button>
           </div>
-
         </div>
         <!--Unread emails, named one opn-email to select as my opened email for my desktop view, added a box shadow to it to show its clicked.-->
         <div class="uremail">
